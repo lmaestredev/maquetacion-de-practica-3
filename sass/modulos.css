@@ -9,85 +9,49 @@ body {
   background-color: #ffffff;
 }
 
-body #container {
+body .container {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  padding-top: 3px 0px;
 }
 
-#container header {
+.container header {
   width: 100%;
   height: 100px;
-  padding: 18px 0;
   background-color: #fbfafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
 }
 
-#container header #container-logo {
-  width: 220px;
-  height: 70px;
-  margin: 7px 9px 0px;
-  float: left;
-}
-
-#container header #container-logo a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-#container header #container-logo a img {
-  display: block;
+.container header a img {
   width: 200px;
   height: 52px;
+  margin-left: 10px;
 }
 
-#container header .open-menu {
-  float: right;
-  width: 46px;
-  height: 46px;
-  position: relative;
-  top: 10px;
-  left: -7px;
-}
-
-#container header .open-menu a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-#container header .open-menu a .fas {
+.container header .iconMenu {
+  height: 45px;
+  width: 45px;
   background: #9793ff;
   color: #fff;
-  padding: 7px;
   font-size: 33px;
-  border-radius: 2px;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 6px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-#container header .close-menu {
-  display: none;
-  width: 46px;
-  height: 46px;
-  position: relative;
-  top: 10px;
-  left: -7px;
-}
-
-#container header .close-menu a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-#container header .close-menu a .fas {
-  background: #9793ff;
-  color: #fff;
-  padding: 7px;
-  font-size: 33px;
-  border-radius: 2px;
-}
-
-#container header #container-menu {
+.container header .container-menu {
   display: none;
   position: absolute;
   height: auto;
@@ -95,73 +59,74 @@ body #container {
   background-color: #242424;
   top: 100px;
   opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
-#container header #container-menu ul {
+.container header .container-menu.opacity {
+  display: block;
+  opacity: 1;
+}
+
+.container header .container-menu ul {
   list-style: none;
 }
 
-#container header #container-menu ul li {
+.container header .container-menu ul li {
   height: 40px;
-  padding-top: 9px;
-  padding-left: 11px;
+  width: 100%;
   -webkit-box-shadow: 0px 1px 0px #ffffff1a;
           box-shadow: 0px 1px 0px #ffffff1a;
 }
 
-#container header #container-menu ul li a {
+.container header .container-menu ul li:hover {
+  background-color: #7c78e2;
+}
+
+.container header .container-menu ul li a {
   display: block;
+  width: 80%;
+  height: 100%;
+  padding-top: 8px;
+  padding-left: 8px;
   color: #ffffff;
   font-family: lato;
   font-size: 18px;
   text-decoration: none;
-  font-weight: 300;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
-#container header #container-menu ul li a:hover {
+.container header .container-menu ul li a:hover {
   color: #ff5b56;
 }
 
-#container header #container-menu:target {
-  display: block;
-  opacity: 1;
-  -webkit-animation: showMenu 1.5s linear;
-          animation: showMenu 1.5s linear;
-}
-
-@-webkit-keyframes showMenu {
-  0% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
-    opacity: 0.1;
+@media (min-width: 510px) {
+  .container header a img {
+    margin-left: 20px;
   }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    opacity: 1;
+  .container header .iconMenu {
+    margin-right: 20px;
   }
 }
 
-@keyframes showMenu {
-  0% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
-    opacity: 0.1;
+@media (min-width: 540px) {
+  .container header a img {
+    margin-left: 50px;
   }
-  75% {
-    opacity: 0.5;
+  .container header .iconMenu {
+    margin-right: 50px;
   }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    opacity: 1;
-  }
+}
+
+.container h1 {
+  width: 92%;
+  text-align: left;
+  height: auto;
+  margin: 0 auto;
+  color: #343434;
+  font-size: 33px;
+  font-family: 'Lato';
+  border-bottom: 1px solid;
 }
 /*# sourceMappingURL=modulos.css.map */
