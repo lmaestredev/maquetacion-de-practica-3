@@ -9,14 +9,7 @@ body {
   background-color: #ffffff;
 }
 
-body .container {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding-top: 3px 0px;
-}
-
-.container header {
+header {
   width: 100%;
   height: 100px;
   background-color: #fbfafa;
@@ -29,16 +22,17 @@ body .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 
-.container header a img {
+header a img {
   width: 200px;
   height: 52px;
-  margin-left: 10px;
 }
 
-.container header .iconMenu {
+header .iconMenu {
   height: 45px;
   width: 45px;
   background: #9793ff;
@@ -48,44 +42,40 @@ body .container {
   text-align: center;
   padding-top: 6px;
   cursor: pointer;
-  margin-right: 10px;
 }
 
-.container header .container-menu {
+header .container-menu {
   display: none;
-  position: absolute;
-  height: auto;
   width: 100%;
-  background-color: #242424;
+  position: absolute;
   top: 100px;
-  opacity: 0;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  left: 0px;
+  height: auto;
+  background-color: #242424;
 }
 
-.container header .container-menu.opacity {
+header .container-menu.display {
   display: block;
-  opacity: 1;
 }
 
-.container header .container-menu ul {
+header .container-menu ul {
   list-style: none;
 }
 
-.container header .container-menu ul li {
+header .container-menu ul li {
   height: 40px;
   width: 100%;
   -webkit-box-shadow: 0px 1px 0px #ffffff1a;
           box-shadow: 0px 1px 0px #ffffff1a;
 }
 
-.container header .container-menu ul li:hover {
+header .container-menu ul li:hover {
   background-color: #7c78e2;
 }
 
-.container header .container-menu ul li a {
+header .container-menu ul li a {
   display: block;
-  width: 80%;
+  width: 70%;
   height: 100%;
   padding-top: 8px;
   padding-left: 8px;
@@ -97,36 +87,66 @@ body .container {
   transition: all 400ms;
 }
 
-.container header .container-menu ul li a:hover {
+header .container-menu ul li a:hover {
   color: #ff5b56;
 }
 
-@media (min-width: 510px) {
-  .container header a img {
-    margin-left: 20px;
+@media (min-width: 775px) {
+  header {
+    background: #fbfafa;
+    width: 85%;
+    padding-right: 0px;
   }
-  .container header .iconMenu {
-    margin-right: 20px;
+  header .iconMenu {
+    display: none;
+  }
+  header .container-menu {
+    display: block;
+    position: initial;
+    width: 500px;
+    background: none;
+    margin-left: 30px;
+  }
+  header .container-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container-menu ul li {
+    width: auto;
+    padding-top: 7px;
+  }
+  header .container-menu ul li:hover {
+    background-color: #fbfafa;
+  }
+  header .container-menu ul li a {
+    display: inline;
+    padding: 0px;
+    color: #242424;
   }
 }
 
-@media (min-width: 540px) {
-  .container header a img {
-    margin-left: 50px;
-  }
-  .container header .iconMenu {
-    margin-right: 50px;
-  }
-}
-
-.container h1 {
-  width: 92%;
+h1 {
+  width: 100%;
+  padding: 0 12px;
   text-align: left;
   height: auto;
   margin: 0 auto;
   color: #343434;
   font-size: 33px;
   font-family: 'Lato';
-  border-bottom: 1px solid;
+}
+
+@media (min-width: 775px) {
+  h1 {
+    width: 85%;
+  }
 }
 /*# sourceMappingURL=modulos.css.map */

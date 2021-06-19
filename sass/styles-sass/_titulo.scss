@@ -1,60 +1,21 @@
-.container{
+h1{
+    width: 100%;
+    padding:0 12px;
+    text-align: left;
+    height: auto;
+    margin: 0 auto;
+    color: #343434;
+    font-size: 33px;
+    font-family: 'Lato';
+    // border-bottom:1px solid;
+}
+
+
+@media(min-width:775px){
     h1{
-        width: 92%;
-        text-align: left;
-        height: auto;
-        margin: 0 auto;
-        color: #343434;
-        font-size: 33px;
-        font-family: 'Lato';
-        border-bottom:1px solid;
+        width: 85%;
     }
 }
 
-// @media(min-width:540px){
-//     .container{
-//         h1{
-//             width: 81%;
-//         }
-//     }
-// }
 
-// @media(min-width:600px){
-//     .container{
-//         h1{
-//             width: 82%;
-//         }
-//     }
-// }
 
-// @media(min-width:650px){
-//     .container{
-//         h1{
-//             width: 83%;
-//         }
-//     }
-// }
-
-// @media(min-width:670px){
-//     .container{
-//         h1{
-//             width: 84%;
-//         }
-//     }
-// }
-
-// @media(min-width:720px){
-//     .container{
-//         h1{
-//             width: 85%;
-//         }
-//     }
-// }
-
-// @media(min-width:767px){
-//     .container{
-//         h1{
-//             line-height: 50px;
-//         }
-//     }
-// }
