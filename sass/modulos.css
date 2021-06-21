@@ -10,9 +10,16 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 92%;
   height: 100px;
   background-color: #fbfafa;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+
+header div {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,16 +30,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 0 10px;
 }
 
-header a img {
+header div a img {
   width: 200px;
   height: 52px;
 }
 
-header .iconMenu {
+header div .iconMenu {
   height: 45px;
   width: 45px;
   background: #9793ff;
@@ -44,7 +49,7 @@ header .iconMenu {
   cursor: pointer;
 }
 
-header .container-menu {
+header div .container-menu {
   display: none;
   width: 100%;
   position: absolute;
@@ -54,26 +59,26 @@ header .container-menu {
   background-color: #242424;
 }
 
-header .container-menu.display {
+header div .container-menu.display {
   display: block;
 }
 
-header .container-menu ul {
+header div .container-menu ul {
   list-style: none;
 }
 
-header .container-menu ul li {
+header div .container-menu ul li {
   height: 40px;
   width: 100%;
   -webkit-box-shadow: 0px 1px 0px #ffffff1a;
           box-shadow: 0px 1px 0px #ffffff1a;
 }
 
-header .container-menu ul li:hover {
+header div .container-menu ul li:hover {
   background-color: #7c78e2;
 }
 
-header .container-menu ul li a {
+header div .container-menu ul li a {
   display: block;
   width: 70%;
   height: 100%;
@@ -82,32 +87,35 @@ header .container-menu ul li a {
   color: #ffffff;
   font-family: lato;
   font-size: 18px;
+  font-weight: 300;
   text-decoration: none;
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
-header .container-menu ul li a:hover {
+header div .container-menu ul li a:hover {
   color: #ff5b56;
 }
 
 @media (min-width: 775px) {
   header {
+    width: 100%;
     background: #fbfafa;
-    width: 85%;
-    padding-right: 0px;
   }
-  header .iconMenu {
+  header div {
+    width: 80%;
+  }
+  header div .iconMenu {
     display: none;
   }
-  header .container-menu {
+  header div .container-menu {
     display: block;
     position: initial;
     width: 500px;
     background: none;
     margin-left: 30px;
   }
-  header .container-menu ul {
+  header div .container-menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,34 +127,101 @@ header .container-menu ul li a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header .container-menu ul li {
+  header div .container-menu ul li {
     width: auto;
     padding-top: 7px;
   }
-  header .container-menu ul li:hover {
+  header div .container-menu ul li:hover {
     background-color: #fbfafa;
   }
-  header .container-menu ul li a {
+  header div .container-menu ul li a {
     display: inline;
     padding: 0px;
     color: #242424;
   }
 }
 
-h1 {
+.contents {
+  background-color: #fff;
   width: 100%;
-  padding: 0 12px;
+}
+
+.contents .section {
+  width: 92%;
+  margin: 0px auto;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.contents .section .titulo {
   text-align: left;
-  height: auto;
-  margin: 0 auto;
   color: #343434;
   font-size: 33px;
   font-family: 'Lato';
+  border-bottom: 1px solid;
+  margin-bottom: 15px;
+}
+
+.contents .section .img {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contents .section p {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #414141;
+  margin-bottom: 16px;
+}
+
+.contents .section .first-image {
+  width: 160px;
+  height: 160px;
+  float: left;
+  margin: 8px;
+  margin-bottom: 0px;
+}
+
+.contents .section .clearfix {
+  clear: both;
+  float: none;
+}
+
+.contents .section .subtittle {
+  font-family: lato;
+  font-size: 25px;
+  color: #ff5b56;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.contents .section .right-image {
+  width: 160px;
+  float: right;
+  margin-left: 5px;
 }
 
 @media (min-width: 775px) {
-  h1 {
-    width: 85%;
+  .contents .section {
+    width: 80%;
+  }
+  .contents .section .titulo {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .contents .section p {
+    font-size: 16px;
+  }
+  .contents .section .first-image, .contents .section .right-image {
+    width: 220px;
+    height: 220px;
+  }
+  .contents .section .subtittle {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=modulos.css.map */
