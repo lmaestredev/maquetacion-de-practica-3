@@ -1,0 +1,107 @@
+@import "_variables.scss";
+
+.content-section{
+    width:92%;
+    max-width:1080px;
+    margin: 0px auto;
+    text-align: justify;
+    margin-bottom: 20px;
+
+    // TITTLE AND SUBTITTLEs
+    .title-content-section{
+        text-align: left;
+        color: $black34;
+        font-size: 32px;
+        font-family: $lato;
+        border-bottom:1px solid;
+        margin-bottom: 15px ;
+    }
+
+    .subtitle{
+       font-family:$lato;
+       font-size:23px;
+       color:$salmon; 
+       font-weight:400;
+       margin-bottom: 15px;
+       margin-top:20px;
+    }
+        
+    .text-content-section{
+        font-family:$lato;
+        font-size:14px;
+        font-weight:300;
+        line-height: 20px;
+        color:$blackP;
+        
+    }
+        
+    .subtitle-items{
+        font-family: $lato;
+        font-size:18px;
+        margin:3px;
+        margin-left:0px;
+        margin-top:19px;
+    }
+
+    .btn-amazon{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        height:50px;
+        background:$salmon;
+        color:$white-fff;
+        font-family: $lato;
+        font-size:17px;
+        text-decoration:none;
+        text-align: center;
+        margin:0 auto;
+        border-radius:20px;
+    }
+
+    .btn-coussins-pillow{
+        display: block;
+        text-decoration: none;
+        color: #ff5b56;
+        width: 250px;
+        text-decoration: underline;
+    }
+}
+
+@media(min-width:775px){
+
+    .content-section{
+        width:80%;
+        
+        .title-content-section{
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .text-content-section{
+            font-size:15px;
+        }
+
+        .first-image, .right-image{
+            width:220px;
+            height:220px; 
+        }
+
+        .subtitle{
+            font-size:30px;
+        }
+
+        .subtitle-items{
+            font-size:20px;
+        }
+
+        .btn-amazon{
+            width:55%;
+            height:60px;
+            font-size:19px;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,63 @@
+.content-section{
+    .pregnant-img{
+        width:100%;
+        margin-bottom: 20px;
+        margin-top:20px;
+    }
+    
+    .first-img{
+        width:160px;
+        height:160px;
+        float:left;
+        margin: 8px 8px 0px 0px;
+    }
+    
+    .right-img{
+        width:160px;
+        float: right;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    } 
+
+    .fourth-img{
+        width:170px;
+        float:left;
+        margin-right: 5px;
+    }
+    
+    .fifth-img{
+        @extend .right-img;
+        width:170px;  
+    }
+    .clearfix{
+        clear:both;
+        float:none;
+    }
+
+    .pillow-companies{
+        .companies-img{
+            width:200px;
+            margin: 15px;
+        }
+    }
+}
+
+@media(min-width:775px){
+    
+    .content-section{
+        .first-img{
+            width: 215px;
+            height: 215px;                
+        }
+        .right-img{
+            width:220px;
+        }  
+        
+        .fourth-img{
+            width:267px;
+        }
+        .fifth-img{
+            width:220px;
+        }
+    }    
+}

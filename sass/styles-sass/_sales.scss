@@ -1,0 +1,160 @@
+@import '_variables.scss';
+
+.content-section{
+
+    .sales-box{
+        overflow: auto;
+        width: auto;
+        height:auto;
+        margin-top: 10px;
+        display:grid;
+        grid-template-columns:195px 230px 195px;
+        grid-template-rows:26px repeat(4, 227px);
+
+        .subtitle-box{
+            background:$black34;
+            padding:2px;
+            text-align:center;
+            font-family:$lato;
+            font-size: 17px;
+            font-weight: 300;
+            color:$white-fff;
+            border-bottom: 2px solid $salmon;
+        }
+        
+        // PILLOW NAMES AND IMAGES
+        .name-img{
+            text-align:center;
+
+            .text-name-img{
+                text-decoration:none;
+                font-size: 17px;
+                color:$black34;
+                font-family:$lato;
+                font-weight: 500;
+                transition:all 300ms;
+
+                &:hover{
+                    color:$salmon;
+                }
+            }
+
+            a{
+                display: block;
+                padding-top: 14px;
+                .img-box{
+                    width:155px;
+                }
+            }
+            
+        }
+
+         // PILLOW CHARASTERISTIC
+        .charasteristic{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .charasteristic-text{
+                width: 94%;
+                margin: 0 auto;
+                text-align:left;
+                font-family:$lato;
+                font-size:17px;
+                font-weight:300;
+                line-height: 26px;
+                color: $color-price-text;  
+            }
+            
+        }
+
+        // PILLOW PRICES
+        .price{
+            text-align:center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .price-text{
+                font-family: $lato;
+                color:$color-price-text;
+                font-weight: 300;
+                font-size:17px;
+                
+                .btn-price{
+                    display:block;
+                    text-decoration:none;
+                    width:120px;
+                    height:28px;
+                    color:$white-fff;
+                    background:$salmon;
+                    border-radius:5px;
+                    margin:0px auto;
+                    padding:2px;
+                    font-size:15px;
+                }
+            }            
+        }
+
+        // GRAY BORDER
+        .name-img, .charasteristic, .price{
+            border:$border-box;
+            border-radius:$border-radius;
+        }
+
+        // BACKGROUND BOXES
+        .odd-rows{
+            background-color:$odd-rows;
+        }
+
+        .even-rows{
+            background-color:$even-rows;
+        }
+
+        
+    }
+    
+}
+
+@media(min-width:675px){
+    .content-section{
+        .sales-box{
+            width:100%;
+            grid-template-columns:30% 40% 30%;
+
+            // PILLOW NAMES AND IMAGES
+            .name-img{    
+                .text-name-img{
+                    font-size:19px;
+                }
+
+                a{
+                    .img-box{
+                        width:165px;
+                    }
+                }
+            }
+
+            // PILLOW CHARASTERISTIC
+            .charasteristic{
+                .charasteristic-text{
+                    width: 70%;
+                    line-height: 28px;
+                }
+                
+            }
+
+            // PILLOW PRICES
+            .price{    
+                .price-text{
+                    .btn-price{
+                        width:124px;
+                        height:30px;
+                        margin-top:5px;
+                        padding:3px;
+                        font-size:17px;
+                    }
+                }            
+            }
+        }
+    }
+}

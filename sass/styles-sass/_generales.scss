@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 *{
     margin:0px;
     padding:0px; 
@@ -5,5 +7,11 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-color: $white-fff;
+
+    .underline-header{
+        width: 100%;
+        border: 1px solid $greyBorder;
+        margin-bottom: 20px;
+    }
 }

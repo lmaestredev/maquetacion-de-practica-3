@@ -1,0 +1,7 @@
+@import "_variables.scss";
+@import "_content-section.scss";
+
+.footer{
+    @extend .content-section;
+    text-align: center;
+}
